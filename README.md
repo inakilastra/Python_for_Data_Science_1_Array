@@ -11,6 +11,23 @@
 <br /><br />
 
 >
+> - :white_check_mark: [Subject](#subject)
+>
+>   - :white_check_mark: [Exercise 00 Give my BMI](#exercise-00-give-my-bmi)
+>
+>   - :white_check_mark: [Exercise 01 2D array](#exercise-01-2d-array)
+>
+>   - :white_check_mark: [Exercise 02 load my image](#exercise-02-load-my-image)
+>
+>   - :white_check_mark: [Exercise 03 zoom on me](#exercise-03-zoom-on-me)
+>
+>   - :white_check_mark: [Exercise 04 rotate me](#exercise-04-rotate-me)
+>
+>   - :white_check_mark: [Exercise 05 Pimp my image](#exercise-05-pimp-my-image)
+
+<br /><br />
+
+>
 > - :white_check_mark: [Evaluation](#evaluation) 
 
 <br /><br /><br /><br />
@@ -80,6 +97,7 @@ def give_bmi(height: list[int | float], weight: list[int | float]) -> list[int |
 def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
 #your code here
 ```
+
 Your tester.py:
 
 ```python
@@ -251,7 +269,7 @@ Your array after slicing and the zoom area may be different.
 [:arrow_up::arrow_up::arrow_up::arrow_up::arrow_up: **top** :arrow_up::arrow_up::arrow_up::arrow_up::arrow_up:](#python-for-data-science)
 <br /><br /><br /><br />
 
-### <h3>Exercise 04 XXX</h3>
+### <h3>Exercise 04 rotate me</h3>
 
 Turn-in directory : ex4/<br />
 Files to turn in : load_image.py, rotate.py<br />
@@ -374,6 +392,14 @@ Expected output: (you must display the images transformed)
 <p align="center">
   <img src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/landscape.png?raw=true" alt="Landscape."/>
 </p>
+
+<br /><br />
+[:arrow_up::arrow_up::arrow_up::arrow_up::arrow_up: **top** :arrow_up::arrow_up::arrow_up::arrow_up::arrow_up:](#python-for-data-science)
+<br /><br /><br /><br />
+
+## <h2>Evaluation</h2>
+
+<h3>Guidelines</h3>
 
 <br /><br />
 [:arrow_up::arrow_up::arrow_up::arrow_up::arrow_up: **top** :arrow_up::arrow_up::arrow_up::arrow_up::arrow_up:](#python-for-data-science)
