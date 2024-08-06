@@ -211,20 +211,10 @@ Create a program that should load the image "animal.jpeg", print some informatio
 - The number of channel
 - The pixel content of the image.
 - Display the scale on the x and y axis on the image
+
 If anything went wrong, the program must not stop abruptly and handle any error with a clear message.
 
 Expected output:
-<p align="center">
-  <img src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/animal1.png?raw=true" alt="Animal zoom."/>
-</p>
-<center>
-<picture>
- 
-  <img alt="Animal zoom." src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/animal1.png">
-</picture>
-![animal](https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/animal1.png)
-</center>
-
 
 ```
 $> python zoom.py
@@ -249,6 +239,9 @@ $>
 
 Expected output:
 
+<p align="center">
+  <img src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/animal1.png?raw=true" alt="Animal zoom."/>
+</p>
 
 ```
 Your array after slicing and the zoom area may be different.
@@ -258,25 +251,129 @@ Your array after slicing and the zoom area may be different.
 [:arrow_up::arrow_up::arrow_up::arrow_up::arrow_up: **top** :arrow_up::arrow_up::arrow_up::arrow_up::arrow_up:](#python-for-data-science)
 <br /><br /><br /><br />
 
-### <h3>Exercise 00 XXX</h3>
+### <h3>Exercise 04 XXX</h3>
 
-Turn-in directory : ex0/<br />
-Files to turn in : XXX.py<br />
-Allowed functions : None<br />
+Turn-in directory : ex4/<br />
+Files to turn in : load_image.py, rotate.py<br />
+Allowed functions : all libs for load, manipulate, display image and table
+manipulation<br />
 
-XXXX
+Make a program which must load the image "animal.jpeg", cut a square part from it and transpose it to produce the image below. It should display it, print the new shape and the data of the image after the transpose.
+
+Expected output:
+
+```python
+$> python rotate.py
+The shape of image is: (400, 400, 1) or (400, 400)
+[[[167]
+[180]
+[194]
+...
+[102]
+[104]
+[103]]]
+New shape after Transpose: (400, 400)
+[[167 180 194 ... 64 50 72]
+...
+[115 116 119 ... 102 104 103]]
+$>
+```
+
+```
+Your array after the transpose can be different.
+You can look for the transpose method, it could help you ...
+```
+
+```
+You have to do the transpose yourself, no library is allowed for the transpose
+```
+
+Expected output:
+
+<p align="center">
+  <img src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/animal2.png?raw=true" alt="Animal zoom."/>
+</p>
 
 <br /><br />
 [:arrow_up::arrow_up::arrow_up::arrow_up::arrow_up: **top** :arrow_up::arrow_up::arrow_up::arrow_up::arrow_up:](#python-for-data-science)
 <br /><br /><br /><br />
 
-### <h3>Exercise 00 XXX</h3>
+### <h3>Exercise 05 Pimp my image</h3>
 
-Turn-in directory : ex0/<br />
-Files to turn in : XXX.py<br />
-Allowed functions : None<br />
+Turn-in directory : ex05/<br />
+Files to turn in : load_image.py, pimp_image.py<br />
+Allowed functions : all libs for load, manipulate, display image and table
+manipulation<br />
 
-XXXX
+You need to develop 5 functions capable of applying a variety of color filters to images, while keeping the image shape the same.
+
+Here’s how they should be prototyped :
+
+```python
+def ft_invert(array) -> array:
+#your code here
+
+def ft_red(array) -> array:
+#your code here
+
+def ft_green(array) -> array:
+#your code here
+
+def ft_blue(array) -> array:
+#your code here
+
+def ft_grey(array) -> array:
+#your code here
+```
+
+You have some restriction operators for each function: (you can only use those given, you don’t have to use them all)
+
+- invert: =, +, -, *
+- red: =, *
+- green: =, -
+- blue: =
+- grey: =, /
+
+Your tester.py:
+
+```python
+from load_image import ft_load
+from pimp_image import ft_invert
+...
+
+array = ft_load("landscape.jpg")
+
+ft_invert(array)
+ft_red(array)
+ft_green(array)
+ft_blue(array)
+ft_grey(array)
+
+print(ft_invert.__doc__)
+```
+
+Expected output: (docstrings can be different)
+
+```
+$> python tester.py
+The shape of image is: (257, 450, 3)
+[[[19 42 83]
+[23 42 84]
+[28 43 84]
+...
+[ 0 0 0]
+[ 1 1 1]
+[ 1 1 1]]]
+...
+Inverts the color of the image received.
+$>
+```
+
+Expected output: (you must display the images transformed)
+
+<p align="center">
+  <img src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/landscape.png?raw=true" alt="Landscape."/>
+</p>
 
 <br /><br />
 [:arrow_up::arrow_up::arrow_up::arrow_up::arrow_up: **top** :arrow_up::arrow_up::arrow_up::arrow_up::arrow_up:](#python-for-data-science)
