@@ -214,7 +214,14 @@ Create a program that should load the image "animal.jpeg", print some informatio
 If anything went wrong, the program must not stop abruptly and handle any error with a clear message.
 
 Expected output:
+<p align="center">
+  <img src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/animal1.png?raw=true" alt="Animal zoom."/>
+</p>
 <center>
+<picture>
+ 
+  <img alt="Animal zoom." src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/animal1.png">
+</picture>
 ![animal](https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/animal1.png)
 </center>
 
