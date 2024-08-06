@@ -215,7 +215,7 @@ If anything went wrong, the program must not stop abruptly and handle any error 
 
 Expected output:
 
-![animal](https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/animal.jpeg)
+![animal](https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/animal1.png)
 
 ```
 $> python zoom.py
