@@ -258,7 +258,7 @@ $>
 Expected output:
 
 <p align="center">
-  <img src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/animal1.png?raw=true" alt="Animal zoom."/>
+  <img src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/img/animal1.png?raw=true" alt="Animal zoom."/>
 </p>
 
 ```
@@ -309,7 +309,7 @@ You have to do the transpose yourself, no library is allowed for the transpose
 Expected output:
 
 <p align="center">
-  <img src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/animal2.png?raw=true" alt="Animal zoom."/>
+  <img src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/img/animal2.png?raw=true" alt="Animal zoom."/>
 </p>
 
 <br /><br />
@@ -390,7 +390,7 @@ $>
 Expected output: (you must display the images transformed)
 
 <p align="center">
-  <img src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/ex03/landscape.png?raw=true" alt="Landscape."/>
+  <img src="https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/img/landscapes.png?raw=true" alt="Landscape."/>
 </p>
 
 <br /><br />
