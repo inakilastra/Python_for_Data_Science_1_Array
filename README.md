@@ -8,10 +8,12 @@
 >
 > - [Castellano](https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/LEEME.md)
 
-<br /><br />
+<br />
 
 > [!IMPORTANT]  
 > At the end of each file you have an explanation of the code.
+
+<br />
 
 >
 > - :white_check_mark: [Subject](#subject)

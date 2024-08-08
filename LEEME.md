@@ -8,10 +8,12 @@
 >
 > - [English](https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/README.md)
 
-<br /><br />
+<br />
 
 > [!IMPORTANT]  
 > Al final de cada fichero tienes una explicación del código.
+
+<br />
 
 >
 > - :white_check_mark: [Subject](#subject)
