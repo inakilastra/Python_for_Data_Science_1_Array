@@ -1,4 +1,3 @@
-# DOCUMENTAR
 def slice_me(family: list[list], start: int, end: int) -> list[list]:
     """ Truncates a 2D array given start and end indices.
 
