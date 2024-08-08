@@ -4,7 +4,7 @@
 
 <br />
 
-> Other Languages
+> [!NOTE] Other Languages
 >
 > - [Castellano](https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/LEEME.md)
 
