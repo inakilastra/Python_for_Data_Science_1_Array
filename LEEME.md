@@ -4,9 +4,8 @@
 
 <br />
 
-> Otros Lenguajes
->
-> - [English](https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/README.md)
+> [!NOTE] 
+> Otros Lenguajes: [English](https://github.com/inakilastra/Python_for_Data_Science_1_Array/blob/main/README.md)
 
 <br />
 
