@@ -10,6 +10,9 @@
 
 <br /><br />
 
+> [!IMPORTANT]  
+> Al final de cada fichero tienes una explicación del código.
+
 >
 > - :white_check_mark: [Subject](#subject)
 >
