@@ -4,17 +4,16 @@ from PIL import Image
 
 
 def ft_load(path: str) -> np.ndarray:
-    """
-    Carga una imagen desde el archivo especificado y devuelve su contenido de
-    píxeles en formato RGB.
+    """ Loads an image from the specified file and returns its pixel content
+        in RGB format.
 
     Args:
-        path (str): La ruta del archivo de imagen.
+        path (str): The path to the image file.
 
     Returns:
-        np.ndarray: Un array numpy que contiene los valores de los píxeles en
-        formato RGB.
+        np.ndarray: A numpy array containing pixel values ​​in RGB format.
     """
+
     try:
         if not path.lower().endswith(("jpg", "jpeg")):
             print("\033[38;5;209mOnly JPG and JPEG formats are supported."
@@ -58,9 +57,8 @@ from PIL import Image
 
 
 def ft_load(path: str) -> np.ndarray:
-    """
-    Carga una imagen desde el archivo especificado y devuelve su contenido de
-    píxeles en formato RGB.
+    """ Carga una imagen desde el archivo especificado y devuelve su contenido
+        de píxeles en formato RGB.
 
     Args:
         path (str): La ruta del archivo de imagen.

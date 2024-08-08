@@ -2,40 +2,40 @@ import numpy as np
 
 
 def is_numeric(value):
-    """Verifico si el valor dado es numérico (entero o flotante).
-       devuelvo True si el valor es de tipo int o float, y False
-       en caso contrario.
+    """ Check if the given value is numeric (integer or float).
+        Return True if the value is of type int or float, and False
+        otherwise.
 
     Args:
-        value: El valor a verificar. Puede ser de cualquier tipo.
+        value: The value to check. It can be of any type.
 
     Returns:
-        bool: True si el valor es un número (int o float), si no False.
+        bool: True if the value is a number (int or float), otherwise False.
     """
     return isinstance(value, (int, float))
 
 
 def give_bmi(height: list[float], weight: list[float]) -> list[float]:
-    """Calcula el índice de masa corporal (IMC) para cada individuo
-       dado su altura y peso.
+    """ Calculates the body mass index (BMI) for each individual given their
+        height and weight.
 
     Args:
-        height: Lista de alturas en metros.
-        weight: Lista de pesos en kilogramos.
+        height: List of heights in meters.
+        weight: List of weights in kilograms.
 
     Returns:
-        Lista de valores de IMC.
+        List of BMI values.
     """
 
     if len(height) != len(weight):
-        print("Las listas altura y peso deben tener la misma longitud.")
+        print("The height and weight lists must be the same length.")
         return []
     if not all(is_numeric(h) for h in height) \
        or not all(is_numeric(w) for w in weight):
-        print("Todos los elementos de las listas deben ser números.")
+        print("All elements in lists must be numbers.")
         return []
     if any(h <= 0 for h in height) or any(w <= 0 for w in weight):
-        print("La altura y el peso deben ser valores positivos.")
+        print("Height and weight must be positive values.")
         return []
     height, weight = np.array(height), np.array(weight)
     bmi = weight / (height ** 2)
@@ -43,15 +43,15 @@ def give_bmi(height: list[float], weight: list[float]) -> list[float]:
 
 
 def apply_limit(bmi: list[float], limit: int) -> list[bool]:
-    """Compara cada valor de IMC con un límite dado y devuelve un valor
-       booleano indicando si el IMC supera el límite.
+    """Compares each BMI value to a given limit and returns a boolean value
+       indicating whether the BMI exceeds the limit.
 
     Args:
-        bmi: Lista de valores de IMC.
-        limit: Límite de IMC.
+        bmi: List of BMI values.
+        limit: BMI limit.
 
     Returns:
-        Lista de valores booleanos indicando si el IMC supera el límite.
+    List of boolean values ​​indicating whether the BMI exceeds the limit.
     """
 
     return [value > limit for value in bmi]
@@ -64,9 +64,9 @@ import numpy as np
 
 
 def is_numeric(value):
-    """Verifico si el valor dado es numérico (entero o flotante).
-       devuelvo True si el valor es de tipo int o float, y False
-       en caso contrario.
+    """ Verifico si el valor dado es numérico (entero o flotante).
+        devuelvo True si el valor es de tipo int o float, y False
+        en caso contrario.
 
     Args:
         value: El valor a verificar. Puede ser de cualquier tipo.
@@ -78,7 +78,7 @@ def is_numeric(value):
 
 
 def give_bmi(height: list[float], weight: list[float]) -> list[float]:
-    """Calcula el índice de masa corporal (IMC)(BMI) segun altura y peso.
+    """ Calcula el índice de masa corporal (IMC)(BMI) segun altura y peso.
 
     Args:
         height: Lista de alturas.
@@ -115,8 +115,8 @@ def give_bmi(height: list[float], weight: list[float]) -> list[float]:
 
 
 def apply_limit(bmi: list[float], limit: int) -> list[bool]:
-    """Compara cada valor de IMC con un límite dado y devuelve un valor
-       booleano indicando si el IMC supera el límite.
+    """ Compara cada valor de IMC con un límite dado y devuelve un valor
+        booleano indicando si el IMC supera el límite.
 
     Args:
         bmi: Lista de valores de IMC.
