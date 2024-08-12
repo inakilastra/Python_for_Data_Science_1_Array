@@ -26,9 +26,10 @@ def ft_load(path: str) -> np.ndarray:
         image = Image.open(path)
         image = image.convert('RGB')
         image_array = np.array(image)
-        print("\033[0;92mThe shape of image is: ",image_array.shape,
-              "\033[0;39m")
-        print("\033[0;92m",image_array,"\033[0;39m")
+        """ print("\033[0;92mThe shape of image is: ",image_array.shape,
+            "\033[0;39m")
+            print("\033[0;92m",image_array,"\033[0;39m")
+        """
         return image_array
     except Exception as error:
         print(f"\033[38;5;209mError: {error}\033[0;39m")

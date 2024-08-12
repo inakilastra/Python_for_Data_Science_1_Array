@@ -1,3 +1,71 @@
+from PIL import Image
+import numpy as np
+import matplotlib.pyplot as plt
+from load_image import ft_load
+
+def zoom_image(image_array, zoom_factor=0.5):
+    try:
+        # Calculate the new dimensions
+        original_shape = image_array.shape
+        new_x = int(original_shape[1] * zoom_factor)
+        new_y = int(original_shape[0] * zoom_factor)
+        
+        # Perform the zoom by slicing the array
+        zoomed_image = image_array[:new_y, :new_x]
+        
+        # Print new image shape and data
+        print(f"New shape after slicing: {zoomed_image.shape}")
+        print(zoomed_image)
+        
+        return zoomed_image
+    except Exception as e:
+        print(f"An error occurred while zooming the image: {e}")
+        return None
+
+def display_image(image_array):
+    try:
+        plt.imshow(image_array)
+        plt.axis('on')  # Show axes
+        plt.show()
+    except Exception as e:
+        print(f"An error occurred while displaying the image: {e}")
+
+if __name__ == "__main__":
+    image_path = "animal.jpeg"
+    img_array, shape = ft_load(image_path)
+    
+    if img_array is not None:
+        zoomed_image = ft_load(img_array)
+        if zoomed_image is not None:
+            display_image(zoomed_image)
+
+'''
+$> python zoom.py
+The shape of image is: (768, 1024, 3)
+[[[120 111 132]
+[139 130 151]
+[155 146 167]
+...
+[120 156 94]
+[119 154 90]
+[118 153 89]]]
+New shape after slicing: (400, 400, 1) 
+or (400, 400)
+
+New shape after slicing: (384, 512, 1)
+
+
+[[[167]
+[180]
+[194]
+...
+[102]
+[104]
+[103]]]
+$>
+'''
+
+'''
 from load_image import ft_load
 import matplotlib.pyplot as plt
 import numpy as np
@@ -35,13 +103,14 @@ def main():
     # Cargar la imagen
     image = ft_load("animal.jpeg")
 
-    if image is not None:       
+    if image is not None:
         # Realizar el zoom en la imagen
         zoom_factor = 2  # Cambia esto para ajustar el nivel de zoom
         zoomed_image = zoom_on_image(image, zoom_factor)
-        
+
         # Imprimir la nueva forma de la imagen
-        print("\033[0;92mNew shape after slicing: ",zoomed_image.shape, "\033[0;39m")
+        print("\033[0;92mNew shape after slicing: ",zoomed_image.shape,
+            "\033[0;39m")
         print("\033[0;92m",zoomed_image,"\033[0;39m")
         # Mostrar la imagen original y la imagen con zoom
         fig, axes = plt.subplots(1, 2, figsize=(12, 6))
@@ -55,7 +124,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+'''
 
 '''
 from load_image import ft_load
