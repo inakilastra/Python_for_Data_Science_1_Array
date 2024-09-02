@@ -134,8 +134,8 @@ tester.py
 
 from give_bmi import give_bmi, apply_limit
 
-height = [2.71, 2.62, 2.50]
-weight = [165.3, 38.4, 40]
+height = [2.71, 2.62, 2.50, 2.8]
+weight = [165.3, 38.4, 40, 220]
 
 bmi = give_bmi(height, weight)
 print(bmi, type(bmi))
